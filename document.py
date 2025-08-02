@@ -4,15 +4,15 @@ import io
 import sys
 import json
 import requests
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from openai import OpenAI
 import google.generativeai
 import anthropic
-from IPython.display import Markdown, display, update_display
+#from IPython.display import Markdown, display, update_display
 import gradio as gr
 import subprocess
 
-load_dotenv(override=True)
+#load_dotenv(override=True)
 os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY', 'your-key-if-not-using-env')
 os.environ['ANTHROPIC_API_KEY'] = os.getenv('ANTHROPIC_API_KEY', 'your-key-if-not-using-env')
 os.environ['HF_TOKEN'] = os.getenv('HF_TOKEN', 'your-key-if-not-using-env')
